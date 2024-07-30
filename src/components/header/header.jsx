@@ -2,7 +2,7 @@ import toggleMenu from "./header-component";
 
 function Header() {
   return (
-    <header className="inset-x-0 top-0 z-50 bg-slate-800 text-white">
+    <header className="inset-x-0 top-0 z-50 bg-slate-800 text-white ">
       <nav
         className="flex items-center justify-between p-4 lg:px-8 text-white"
         aria-label="Global"

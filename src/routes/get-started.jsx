@@ -1,10 +1,11 @@
 import "../../src/App.css";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
+import { NavLink } from "react-router-dom";
 
 export default function GetStarted() {
   return (
-    <div className="sm:w-full" id="getstarted">
+    <div className="sm:w-full">
       <Header />
       <div className="w-full p-8">
         <h2 className="text-2xl font-serif">Services</h2>
@@ -64,6 +65,49 @@ export default function GetStarted() {
             Catalog photography
           </button>
         </div>
+        <h2 className="text-2xl font-serif mt-12">Number of Photos</h2>
+        <p className="">Enter your prefered number of photos</p>
+        <input
+          type="text"
+          className="p-2 mt-2 rounded bg-slate-200 border-gray-300"
+          placeholder="Enter"
+        />
+        <h2 className="text-2xl font-serif mt-12">Other Information</h2>
+        <p className="">Enter required informations</p>
+        <div className="flex items-center justify-between w-full gap-2 flex-wrap">
+          <input
+            type="text"
+            className="p-2 mt-2 rounded bg-slate-200 border-gray-300 w-[32.5%]"
+            placeholder="Enter Your Name"
+          />
+          <input
+            type="text"
+            className="p-2 mt-2 rounded bg-slate-200 border-gray-300 w-[32.5%]"
+            placeholder="Enter Email"
+          />
+          <input
+            type="text"
+            className="p-2 mt-2 rounded bg-slate-200 border-gray-300 w-[32.5%]"
+            placeholder="Enter Phone Number"
+          />
+        </div>
+        <input
+          type="text"
+          className="p-2 mt-3 rounded bg-slate-200 border-gray-300 w-full"
+          placeholder="Enter Your Address"
+        />
+        <textarea
+          name=""
+          id=""
+          placeholder="Enter other text"
+          className="mb-4 p-2 mt-3 rounded bg-slate-200 border-gray-300 w-full h-[8rem] resize-none"
+        ></textarea>
+        <NavLink
+          to="userdashboard"
+          className=" w-fit px-6 py-2 lg:px-10 rounded-none uppercase font-thin bg-[#0C0748] text-white hover:bg-[#27225c] hover:text-white"
+        >
+          Send Request
+        </NavLink>
       </div>
       <Footer />
     </div>

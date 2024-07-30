@@ -12,7 +12,7 @@ function HeroSection() {
       </p>
       <NavLink
         to="getstarted"
-        className="mt-4 w-fit px-6 lg:px-10 py-1 rounded-none text-lg bg:text-2xl uppercase font-thin bg-[#0C0748] text-white hover:bg-[#27225c] hover:text-white"
+        className="mt-4 w-fit px-6 lg:px-10 py-1 rounded-none text-lg bg:text-2xl uppercase font-thin bg-[#0C0748] text-white hover:bg-[#27225c] hover:text-white cssanimation lightning"
       >
         Get Started
       </NavLink>
