@@ -1,4 +1,5 @@
 import toggleMenu from "./header-component";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -48,9 +49,12 @@ function Header() {
           <a href="#" className="text-sm font-semibold leading-6 text-white">
             Shipping
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
-            How It Works
-          </a>
+          <NavLink
+            to="/landingpage"
+            className="text-sm font-semibold leading-6 text-white"
+          >
+            About
+          </NavLink>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-white">
