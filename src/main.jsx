@@ -9,6 +9,7 @@ import UserDashboard from "./routes/user-dashboard";
 // import App from './App.jsx'
 import "./index.css";
 import Root from "./routes/root";
+import AppAbout from "./routes/landing-page";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,16 @@ const router = createBrowserRouter([
   {
     path: "getstarted/userdashboard",
     element: <UserDashboard />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/landingpage",
+    element: <AppAbout />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/landingpage/getstarted",
+    element: <GetStarted />,
     errorElement: <ErrorPage />,
   },
 ]);
