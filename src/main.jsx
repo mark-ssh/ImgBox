@@ -37,6 +37,11 @@ const router = createBrowserRouter([
     element: <GetStarted />,
     errorElement: <ErrorPage />,
   },
+  {
+    path: "/dashboard/getstarted",
+    element: <GetStarted />,
+    errorElement: <ErrorPage />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

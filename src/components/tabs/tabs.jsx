@@ -10,7 +10,7 @@ export function Tabss() {
           <img src="/img/no_data.png" alt="" className="mt-20 w-[6rem]" />
           <p className="text-gray-600 mt-3">No Requests submitted yet.</p>
           <NavLink
-            to="getstarted"
+            to="dashboard/getstarted"
             className=" w-fit px-6 mt-4 py-2 lg:px-10 rounded-none uppercase font-thin bg-[#0C0748] text-white hover:bg-[#27225c] hover:text-white"
           >
             Send Request
