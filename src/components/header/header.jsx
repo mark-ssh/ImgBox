@@ -9,7 +9,7 @@ function Header() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5 flex gap-2 items-center">
+          <NavLink to="/" className="-m-1.5 p-1.5 flex gap-2 items-center">
             <img
               className="h-6 lg:h-8 w-auto"
               src="img/film_camera.png"
@@ -18,7 +18,7 @@ function Header() {
             <p className="text-white text-md lg:text-lg font-semibold">
               ImgBox
             </p>
-          </a>
+          </NavLink>
         </div>
         <div className="flex lg:hidden text-white" onClick={toggleMenu}>
           <button
